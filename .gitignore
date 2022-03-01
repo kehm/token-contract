@@ -1,0 +1,13 @@
+# Node
+node_modules/
+dist/
+
+# Log
+*.log
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
