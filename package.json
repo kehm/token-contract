@@ -2,9 +2,15 @@
   "name": "token-contract",
   "version": "1.0.0",
   "description": "A simple Hyperledger Fabric smart contract for creating and transferring tokens",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "^12.16.1",
+    "npm": "^6.4.1"
+  },
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "start": "fabric-chaincode-node start",
+    "build": "tsc -p tsconfig.json",
+    "package": "npm run build && npm shrinkwrap"
   },
   "author": "kehm",
   "license": "Apache-2.0",
